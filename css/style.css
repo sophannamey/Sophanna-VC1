@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.wrapper {
+    background: #3139a8;
+    height: 100vh;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li {
+    list-style-type: none;
+    /* padding: 30px; */
+    display: inline-block;
+    line-height: 100px;
+}
+.navbar ul li.active a{
+    background: #fff;
+    color: #000;
+}
+.navbar ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 25px;
+    color: #fff;
+    transition: .4s;
+}
+.navbar ul li a:hover{
+    background: none;
+    color: #000;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.center h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #fff;
+}
+.center h2 {
+    margin-left: 65%;
+    font-size: 20px;
+    color: #fff;
+}
+.cover-service h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    padding: 20px;
+}
+.cover-image {
+    margin: auto;
+    height: 50vh;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cover-about h4{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+table {
+    width: 500px;
+    height: 300px;
+    margin-left: 35%;
+}
+tr, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.cover-contact h5{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+h6{
+    text-align: center;
+    font-family: Arial;
+    font-size: 25px;
+    padding: 10px;
+}
+p {
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+form {
+    text-align: center;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 30%;
+    padding: 10px;
+}
