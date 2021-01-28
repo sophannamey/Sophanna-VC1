@@ -21,7 +21,7 @@
     background-color: rgba(0,0,0,0.2);
     overflow: hidden;
     width: 0;
-    height: 30%;
+    height: 40%;
     transition: .7s;
 }
 .text {
@@ -32,12 +32,13 @@
     color: #fff;
     font-size: 30px;
  }
-
-
 .navbar {
-    height: 80px;
+    height: 70px;
     width: 100%;
     background: rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 .navbar ul {
     float: right;
@@ -46,7 +47,7 @@
 .navbar ul li {
     list-style-type: none;
     display: inline-block;
-    line-height: 80px;
+    line-height: 70px;
 }
 .navbar ul li.active a{
     border-bottom: 3px solid rgb(247, 224, 23);
@@ -57,7 +58,7 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 25px;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
     transition: .4s;
     border-bottom: 3px solid transparent;
@@ -71,7 +72,7 @@
     text-transform: uppercase;
     text-decoration: none;
     line-height: 80px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 10px;
     color: #fff;
@@ -90,7 +91,7 @@
 .center h1 {
     text-transform: uppercase;
     font-size: 70px;
-    color: rgb(20, 18, 18);
+    color: #fff;
 }
 .center h2 {
     text-transform: uppercase;
@@ -186,15 +187,19 @@ input[type=submit] {
 }
 footer {
     background: #030303;
-    height: 20vh;
+    height: 30vh;
     margin-top: 60px;
 }
-footer p {
+.container-footer {
+    float: left;
+}
+footer p{
     font-size: 20px;
     color: rgb(184, 199, 199);
+    margin-left: 20px;
 }
 .icon {
-   text-align: center;
-   font-size:48px;
-   color:red;
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
