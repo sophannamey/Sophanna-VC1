@@ -4,36 +4,34 @@
     margin: 0;
     font-family: sans-serif;
 }
-.wrapper:hover .overlay1{
-    width: 40%;
-    left: 60%;
+.wrapper:hover .overlay1 {
+    width: 100%;
+    left: 0;
 }
 .overlay1 {
     position: absolute;
     bottom: 0;
     left: 100%;
     right: 0;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     overflow: hidden;
     width: 0;
-    height: 40%;
+    height: 20%;
     transition: .7s;
 }
 .text {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%,-50%);
-    color: #fff;
+    color: rgb(14, 13, 11);
     font-size: 40px;
  }
-.wrapper {
-    background: rgba(0,0,0,0.2);
-}
+
 .navbar {
     height: 70px;
     width: 100%;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -98,30 +96,16 @@
 /* Resume */
 
 .overlay2{
-    width: 25%;
+    width: 100%;
     margin-top: 80px;
 }
 
-.overlay3 {
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    
-    overflow: hidden;
-    width: 0;
-    height:89%;
-    transition: .9s ease;
-}
-.container:hover .overlay3 {
-    width: 70%;
-    left: 30%;
-}
 .text-info2,
 .text-info3{
-    height: 33vh;
+    height: 30vh;
     width: 100%;
-    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .text-info {
     font-size: 20px;
@@ -133,7 +117,6 @@
 .text-info2 {
     background: rgba(0,0,0,0.8);
     font-size: 20px;
-    margin-left: 10px;
     color: #fff;    
 }
 .text-info2 h2 {
@@ -143,7 +126,6 @@
  .text-info3 {
     background: rgba(0,0,0,0.8);
     font-size: 20px;
-    margin-left: 10px;
     color: #fff;
 } 
 .text-info3 h2 {
@@ -197,7 +179,7 @@ h3 {
 /* about */
 
 .container-about {
-    background: rgb(202, 168, 18);
+    
     height: 70vh;
     width: 70%;
     margin-left: 15%;
@@ -213,11 +195,14 @@ h3 {
     padding: 20px;
 }
 table {
+    background: rgb(202, 168, 18);
+    color: #fff;
     width: 390px;
     height: 300px;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 40px;
+    margin-top: 39px;
     border-radius: 10px;
+    margin-bottom: 9px;
 }
 tr, td {
     border-bottom: 1px solid #ddd;
@@ -230,7 +215,7 @@ tr, td {
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 100px;
     border-radius: 20px;
     width: 200px;
@@ -269,7 +254,7 @@ form {
 input[type="text"],
 input[type="number"],
 input[type="email"] {
-    background: rgb(241, 233, 233);
+    background: rgb(250, 236, 107);
     width: 30%;
     padding: 10px;
     margin-bottom: 10px;
@@ -293,8 +278,8 @@ input[type=submit] {
 } 
 footer {
     background: #030303;
-    height: 23vh;
-    margin-top: 50px;
+    height: 25vh;
+    margin-top: 45px;
 }
 .icon {
     text-align: center;
@@ -303,3 +288,14 @@ footer {
 .icon a:hover {
     opacity:0.5; 
 }
+
+/* Responsive */
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media  (max-width: 540px) and (max-width: 800px){
+    .navbar {
+      width: 100%;
+      background: #000;
+    }
+}
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
