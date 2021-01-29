@@ -179,7 +179,6 @@ h3 {
 /* about */
 
 .container-about {
-    
     height: 70vh;
     width: 70%;
     margin-left: 15%;
@@ -255,7 +254,7 @@ input[type="text"],
 input[type="number"],
 input[type="email"] {
     background: rgb(250, 236, 107);
-    width: 30%;
+    width: 25%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -278,7 +277,7 @@ input[type=submit] {
 } 
 footer {
     background: #030303;
-    height: 25vh;
+    height: 20vh;
     margin-top: 45px;
 }
 .icon {
@@ -292,10 +291,46 @@ footer {
 /* Responsive */
 
  /* Responsive layout - makes a two column-layout instead of four columns */
- @media  (max-width: 540px) and (max-width: 800px){
+/* @media screen and (min-width: 100px) and (max-width: 150px) {
+    .text-info{
+        width: 100%;
+    }
+    .text-info2,
+    .text-info3 {
+        width: 100%;
+    }
+
+} */
+@media screen and (max-width: 900px) {
     .navbar {
+        width: 100%;
+    }
+    .column {
+      width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        height: 200px;
+    }
+    .navbar li a {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .column {
       width: 100%;
-      background: #000;
+    }
+    .container-about {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    table {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
     }
 }
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
